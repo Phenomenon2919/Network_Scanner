@@ -5,4 +5,4 @@ Modular python3 code to list all the IP and MAC Addresses of the devices present
 
 ## Usage
 In ./src;
-> python3 network_scanner.py -i \<interface/netmask>
+> python3 network_scanner.py -i \<ip_address/netmask>
