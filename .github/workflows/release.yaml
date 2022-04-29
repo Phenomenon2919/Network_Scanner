@@ -17,6 +17,6 @@ jobs:
       - run: ls -aRl
       # - name: Installing dependencies
       #   run: 
-      - name: Packaging the python applications
+      # - name: Packaging the python applications
 
 
