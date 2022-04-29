@@ -6,4 +6,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Intro
-        run: echo "Intro to Release"
+        run: |
+          echo "Intro to Release"
+          which python
+          which pip
