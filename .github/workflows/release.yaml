@@ -9,4 +9,6 @@ jobs:
         run: |
           echo "Intro to Release"
           which python
+          python --version
           which pip
+          pip --version
