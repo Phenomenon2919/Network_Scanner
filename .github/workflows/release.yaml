@@ -15,8 +15,30 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v2
       - run: ls -aRl
-      # - name: Installing dependencies
-      #   run: 
-      # - name: Packaging the python applications
-
-
+      - name: Installing dependencies
+        run: |
+          pip install -r requirements.txt
+          pip install pyinstaller
+          pip install flake8
+      - name: Lint with flake8
+        run: |
+            # stop the build if there are Python syntax errors or undefined names
+            flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
+            # exit-zero treats all errors as warnings.
+            flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
+      - name: Packaging the python applications
+        run: pyinstaller --onefile src/network_scanner.py
+      - run: ls -aRl
+      - name: Create Release
+        id: create_release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # This token is provided by Actions, you do not need to create your own token
+        with:
+          tag_name: ${{ github.ref }}
+          release_name: Release ${{ github.ref }}
+          body: |
+            Changes in this Release
+            - ${{ github.event.head_commit.message }}
+          draft: false
+          prerelease: false
