@@ -12,3 +12,11 @@ jobs:
           python --version
           which pip
           pip --version
+      - name: Checkout Code
+        uses: actions/checkout@v2
+      - run: ls -aRl
+      # - name: Installing dependencies
+      #   run: 
+      - name: Packaging the python applications
+
+
