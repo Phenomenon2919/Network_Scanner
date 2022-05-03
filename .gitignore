@@ -3,6 +3,12 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+# Dependencies
+node_modules/
+node_modules/*
+/.pnp
+.pnp.js
+
 # C extensions
 *.so
 
@@ -139,6 +145,7 @@ cython_debug/
 
 # Workspace information
 .idea/
+.vscode/
 
 # GitIgnore file itself
 #.gitignore
