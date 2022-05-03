@@ -1,5 +1,5 @@
 module.exports = {
-    branches: ["master", "test"],
+    branches: ["master", "beta"],
     repositoryUrl: "https://github.com/Phenomenon2919/Network_Scanner",
     plugins: [
         '@semantic-release/commit-analyzer',
