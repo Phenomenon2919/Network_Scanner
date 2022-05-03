@@ -6,7 +6,7 @@ module.exports = {
         '@semantic-release/release-notes-generator',
         ['@semantic-release/github',{
             "assets": [
-                {"path":"dist/network_scanner","name":"Simple Network Scanner","label":"Executable Network Scanner"}
+                {"path":"dist/network_scanner","name":"Simple Network Scanner","label":"Independent Network Scanner Executable"}
             ]
         }]
     ]
