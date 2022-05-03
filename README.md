@@ -16,6 +16,6 @@ In ./src;
 
         python3 network_scanner.py -i \<ip_address/netmask>
 
-### Using Executable
+### Using [Executable](https://github.com/Phenomenon2919/Network_Scanner/releases/latest)
 
         ./Simple.Network.Scanner -i \<ip_address/netmask>
