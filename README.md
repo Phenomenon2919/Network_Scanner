@@ -1,5 +1,6 @@
 ![](https://github.com/Phenomenon2919/Network_Scanner/workflows/CI/badge.svg?branch=beta&event=push)
 ![](https://github.com/Phenomenon2919/Network_Scanner/workflows/CI/badge.svg?branch=master&event=push)
+![](https://img.shields.io/github/release/Phenomenon2919/Network_Scanner.svg)
 
 # Network Scanner - Python3 Script
 
